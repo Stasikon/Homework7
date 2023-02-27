@@ -114,7 +114,7 @@ public class Main {
         while (day <= month) {
             day++;
             if ((day - friday) % 7 == 0) {
-                System.out.println("Сегодня пятница, " + day +" число. Необходимо подготовить отчет");
+                System.out.println("Сегодня пятница, "+ day +" число. Необходимо подготовить отчет");
             }
         }
 
