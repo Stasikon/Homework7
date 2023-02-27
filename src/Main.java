@@ -18,7 +18,7 @@ public class Main {
         while (total <= 2_459_000) {
             month = month + 1;
             total = total + salary;
-            System.out.println("Месяц " + month + " сумма накоплений равна " + total + " Рублей");
+            System.out.println("Месяц " + month +" сумма накоплений равна " + total + " Рублей");
         }
     }
 
