@@ -48,7 +48,7 @@ public class Main {
         int investment = 15000;
         int total = 0;
         for (int i = 0; total < 12_000_000; i++) {
-            total = total + total / 7;
+            total = total + total / 100;
             total = total + investment;
             if (i % 7 == 0)
                 System.out.println("Месяц " + i + " Итого " + total);
