@@ -9,7 +9,6 @@ public class Main {
         task7();
         task8();
     }
-
     public static void task1() {
         System.out.println("Задача 1");
         int salary = 15000;
@@ -21,7 +20,6 @@ public class Main {
             System.out.println("Месяц " + month +" сумма накоплений равна " + total + " Рублей");
         }
     }
-
     public static void task2() {
         System.out.println("Задача 2");
         int start = 0;
@@ -34,48 +32,28 @@ public class Main {
             System.out.print(i + " ");
         }
         System.out.println(" ");
-
     }
-
-    public static void task3() {
+    public static void task3(){
         System.out.println("Задача 3");
         int stageY = 12_000_000;
         int newLive = 17;
         int oldDeath = 8;
-        int population = 1000;
-        int oneYearLive = (stageY / population) * newLive;
-        int oneYearDeath = (stageY / population) * oldDeath;
-        int yearLive = 0;
-        int yearDeath = 0;
-        while (yearLive <= 10) {
-            System.out.println("Год " + yearLive + " численность населения составляет " + oneYearLive);
-            yearLive++;
-            oneYearLive = oneYearLive + oneYearLive;
+        for (int i = 0; i <10 ; i++) {
+            stageY= stageY+stageY/1000 *newLive -stageY/1000*oldDeath;
+            System.out.println("Год " + i + " численность населения составляет " + stageY);
         }
-        System.out.println(" ");
-        while (yearDeath <= 10) {
-            System.out.println("Год " + yearDeath + " численность населения составляет " + oneYearDeath);
-            yearDeath++;
-            oneYearDeath = oneYearDeath + oneYearDeath;
-        }
-
     }
-
     public static void task4() {
         System.out.println("Задача 4");
         int investment = 15000;
         int total = 0;
-        int i = 0;
-        for (; total < 12_000_000; i++) {
+        for (int i = 0; total < 12_000_000; i++) {
             total = total + total / 7;
             total = total + investment;
-            if (i % 5 == 0)
+            if (i % 7 == 0)
                 System.out.println("Месяц " + i + " Итого " + total);
-
         }
-
     }
-
     public static void task5() {
         System.out.println("Задача 5");
         int investment = 15000;
@@ -84,12 +62,11 @@ public class Main {
         for (; total < 12_000_000; i++) {
             total = total + total / 100;
             total = total + investment;
-            if (i % 6 == 0) {
+            if (i % 7 == 0) {
                 System.out.println("Месяц " + i + " Итого " + total);
             }
         }
     }
-
     public static void task6() {
         System.out.println("Задача 6");
         int investment = 15_000;
@@ -105,7 +82,6 @@ public class Main {
             }
         }
     }
-
     public static void task7() {
         System.out.println("Задача 7");
         int friday = 3;
@@ -117,10 +93,7 @@ public class Main {
                 System.out.println("Сегодня пятница, "+ day +" число. Необходимо подготовить отчет");
             }
         }
-
-
     }
-
     public static void task8() {
         System.out.println("Задача 8");
         int start = 0;
